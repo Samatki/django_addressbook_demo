@@ -1,0 +1,25 @@
+{% extends 'addressBookDemo/base.html' %}
+
+{% block content %}
+
+	<h1>Address Book Demo</h1>
+	<p>Lists companies, the countries where they are operating and contact numbers</p>
+
+	{% for datum in data %}
+		<div class="datarow">
+			<div class="nameBox">{{datum.name.text}}</div>
+			<div class="telBox">
+			{% for telNo in datum.telephoneNumbers %}
+				<div>{{telNo.text}}</div>
+			{% endfor %}
+			</div>
+			<div class="countryBox">
+			{% for country in datum.countries %}
+				<div>{{country.text}}</div>
+			{% endfor %}
+			</div>
+		</div>
+
+	{% endfor %}
+	
+{% endblock content %}

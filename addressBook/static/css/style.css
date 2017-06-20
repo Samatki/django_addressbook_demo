@@ -1,0 +1,62 @@
+*{font-family: 'Raleway', 'arial', sans-serif;}
+
+h1{
+ text-align:center; 
+  font-size:75px;
+}
+
+p{
+  text-align:center;
+  font-size:30px;
+  margin-bottom:60px;
+}
+
+.datarow{
+  display:flex;
+  width:900px;
+  margin:auto;
+  flex-wrap:wrap;  
+  margin-bottom:50px;
+}
+
+.nameBox{
+  color:white;
+  background-color:silver;
+  word-wrap:break-word;
+  font-size:30px;
+  border-top-left-radius:20px;
+  padding:15px;
+  padding-left:20px;
+  box-sizing:border-box;
+  width:70%;
+}
+
+.telBox{
+  background-color:lightgrey;
+  padding-top:15px;
+  padding-bottom:5px;
+  font-size:20px;
+  border-top-right-radius:20px;
+  text-align:center;
+  box-sizing:border-box;
+  width:30%}
+
+.countryBox{
+  padding-left:15px;
+  background-color:powderblue;
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px;
+  font-size:20px;
+  box-sizing:border-box;
+  width:100%;  
+}
+
+.telBox div{
+  padding-bottom:10px;
+}
+
+.countryBox div{
+  padding: 15px;
+  box-sizing:border-box;
+  display:inline-block;
+}
